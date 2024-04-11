@@ -614,22 +614,21 @@ h1 {
   
   .clients {
     margin-top: 70px;
-    display: flex;
+    display: block;
     background-image: url(img/building-bg.png);
     background-size: cover;
-    height: 400px;
+    height: 300px;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   
   .client-p {
-    margin-left: 50px;
-    margin-right: 70px;
+    margin: 10px 0;
   }
   
   .client-p p {
-    font-size: large;
-    margin-left: 5px;
+    font-size: 15px;
   }
   
   .slider {
@@ -685,17 +684,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1400px;
+    width: 2100px;
   }
   .slider .slide-track-2 {
     animation: scroll-r 30s linear infinite;
     display: flex;
-    width: 1400px;
+    width: 2100px;
   }
   
   .slider .slide {
     height: auto;
-    width: 100px;
+    width: 150px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -717,7 +716,7 @@ h1 {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-150px * 7));
     }
   }
   @keyframes scroll-r {
@@ -725,7 +724,7 @@ h1 {
         transform: translateX(0);
     }
     0% {
-        transform: translateX(calc(-100px * 7));
+        transform: translateX(calc(-150px * 7));
     }
   }
 
