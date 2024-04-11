@@ -347,12 +347,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1400px;
+  width: 3500px;
 }
 .slider .slide-track-2 {
   animation: scroll-r 30s linear infinite;
   display: flex;
-  width: 1400px;
+  width: 3500px;
 }
 
 .slider .slide {
@@ -365,7 +365,7 @@ h1 {
 
 .slider .slide img {
   width: 100%;
-  /padding: 1pc;
+  padding: 1pc;
   vertical-align: middle;
   margin: 0 auto;
   display: inline-block;
@@ -728,10 +728,26 @@ h1 {
     margin: 0;
   }
 
+  .contacts-container {
+    text-align: center;
+    font-size: 4vw;
+    margin: 0;
+  }
+
+  .contacts-divider p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .contacts-divider {
+    display: block;
+  }
+}
+
+
 @media only screen and (max-width: 1270px) {
   
   .events-past {
     border-right: none;
   }
 }
-
