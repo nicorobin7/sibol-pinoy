@@ -615,7 +615,7 @@ h1 {
   .clients {
     margin-top: 70px;
     display: flex;
-    background-image: url(/Sibol-Website/img/building-bg.png);
+    background-image: url(img/building-bg.png);
     background-size: cover;
     height: 400px;
     align-items: center;
