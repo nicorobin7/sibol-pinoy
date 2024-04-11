@@ -134,7 +134,7 @@ img {
   cursor: pointer;
   display: inline-flex;
   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
@@ -173,7 +173,7 @@ img {
   border: none;
   font-size: 2vw;
   left: 15vw;
-  bottom: 15%;
+  bottom: 10%;
   background-color:#2C2E86;
   color:white;
 }
@@ -204,7 +204,7 @@ h1 {
   box-shadow: 0px 1px 5px;
   padding: 50px;
   border-radius: 10px;
-  font-size: 1vw;
+  font-size: 16px;
   color: white;
 }
 
@@ -347,12 +347,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3500px;
+  width: 1400px;
 }
 .slider .slide-track-2 {
   animation: scroll-r 30s linear infinite;
   display: flex;
-  width: 3500px;
+  width: 1400px;
 }
 
 .slider .slide {
@@ -365,7 +365,7 @@ h1 {
 
 .slider .slide img {
   width: 100%;
-  padding: 1pc;
+  /padding: 1pc;
   vertical-align: middle;
   margin: 0 auto;
   display: inline-block;
@@ -538,6 +538,7 @@ h1 {
 }
 
 .sidebar {
+
 }
 
 .active {
@@ -550,7 +551,13 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-
+  .logo-name span {
+    font-size: 10px;
+  }
+  
+  h1 {
+    font-size: 6vw;
+  }
   #nav-list {
     position: fixed;
     top: -100%;
@@ -581,12 +588,145 @@ h1 {
     font-size: 2vw;
   }
 
-  .slide {
-    max-width: 150px;
+  
+
+  .card {
+    width: 40%;
   }
 
+  .slide img {
+    max-width: 150px;
+  }
+  
   
 } 
+
+@media only screen and (max-width: 480px) {
+  .services-container {
+    margin-top: 50px;
+  }
+  
+  .clients {
+    margin-top: 70px;
+    display: flex;
+    background-image: url(/Sibol-Website/img/building-bg.png);
+    background-size: cover;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .client-p {
+    margin-left: 50px;
+    margin-right: 70px;
+  }
+  
+  .client-p p {
+    font-size: large;
+    margin-left: 5px;
+  }
+  
+  .slider {
+    /background: #efeef2;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    touch-action: none;
+    /width: 75%;
+    justify-self: end;
+  }
+  
+  .slider:before {
+    left: 0;
+    top: 0;
+  }
+  .slider:after,
+  .slider:before {
+    /background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: auto;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider:after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider:after,
+  .slider:before {
+    /background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: auto;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .slider .slide-track-1 {
+    animation: scroll-l 30s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+  }
+  .slider .slide-track-2 {
+    animation: scroll-r 30s linear infinite;
+    display: flex;
+    width: 1400px;
+  }
+  
+  .slider .slide {
+    height: auto;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .slider .slide img {
+    width: 100%;
+    /padding: 1pc;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: inline-block;
+    /max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes scroll-l {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 7));
+    }
+  }
+  @keyframes scroll-r {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(calc(-100px * 7));
+    }
+  }
+
+  .upcoming-list,.events-past {
+    padding: 20px;
+    margin: 0;
+  }
 
 @media only screen and (max-width: 1270px) {
   
