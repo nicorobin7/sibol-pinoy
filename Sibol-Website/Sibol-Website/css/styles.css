@@ -277,7 +277,7 @@ h1 {
 .clients {
   margin-top: 70px;
   display: flex;
-  background-image: url(/Sibol-Website/img/building-bg.png);
+  background-image: url(/Sibol-Website/Sibol-Website/img/building-bg.png);
   background-size: cover;
   height: 700px;
   align-items: center;
@@ -551,9 +551,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .logo-name span {
-    font-size: 10px;
-  }
+  
   
   h1 {
     font-size: 6vw;
@@ -602,6 +600,14 @@ h1 {
 } 
 
 @media only screen and (max-width: 480px) {
+  .logo-name span a{
+    font-size: 17px;
+  }
+
+  .logo-name {
+    max-width: 200px;
+  }
+  
   .services-container {
     margin-top: 50px;
   }
